@@ -1,0 +1,2624 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charse="UTF-8"/>
+    <meta name="viewport"content="wdith=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="Hamzalistic2020" content="how to save data in localstorage,">
+   
+    <title>GUC_NGURU</title>
+    <style>
+        body{margin:0px;
+             padding:0px;
+             background-color:rgb(224, 230, 227);
+            }
+        *{box-sizing: border-box;}
+        .header{background-color:rgb(1, 39, 46);
+                color:rgb(255, 255, 255);
+                width:100%;
+                height:auto;
+                text-align:center;
+                float:left;
+                background-position:fixed;}
+        .header h1 {font-size:14pt;
+                    margin:0px;}
+        .header h3 {font-size:14pt;
+                    margin:0px;}
+
+ .open{width:30%;
+         height:50px;
+         color:rgb(255, 255, 255);
+         background:rgb(255, 0, 34);
+         padding:5px;
+         float:left;
+         font-size:14pt;
+         background-position:fixed;
+        }
+        .slid{width:70%;
+         height:50px;
+         color:rgb(255, 255, 255);
+         background:rgb(0, 34, 25);
+         padding:5px;
+         float:left;
+         font-size:15pt;
+         background-position:fixed;
+        }
+
+        .principal{width:40%;
+         height:50px;
+         color:rgb(255, 255, 255);
+         background:rgb(255, 0, 34);
+         padding:5px;
+         float:left;
+         font-size:10px;
+         text-align:left;
+         background-position:fixed;
+        }
+        .listic{width:60%;
+         height:50px;
+         color:rgb(255, 255, 255);
+         background:rgb(0, 34, 25);
+         padding:5px;
+         float:left;
+         font-size:12px;
+         background-position:fixed;
+        }
+        
+.container{float:left;
+           margin:0px;
+           padding:0px;
+           width:100%;
+           height:400px;
+           overflow:auto;}
+.info{
+           padding:10px;
+           width:100%;
+           height:auto;
+           background-color:rgb(224, 230, 227);
+           box-shadow:5px 5px 20px #bbb;
+           margin:0px auto;
+           
+          }
+
+           .content{
+           padding:0px;
+           width:100%;
+           height:auto;
+           background-color:rgb(224, 230, 227);
+           box-shadow:5px 5px 20px #bbb;
+           margin:0px auto;
+           padding-top:20px;
+           padding-bottom:20px;}
+         table{margin:0px auto;
+            background-color:rgb(255, 255, 255);
+           box-shadow:5px 5px 30px rgb(0, 0, 0);}
+
+           td{border:none;
+            background-color:rgb(0, 0, 0);
+           
+            color:white;
+          
+            }
+           th{border:none;
+            background-color:rgb(2, 110, 129);
+            color:white;}
+    .sidnav {background-color:rgb(2, 110, 129, 0.4);
+              width:50%;
+              height:400px;
+              float:left;
+              position: absolute;
+              z-index:1;
+              display:none;
+              top:95px;
+              padding:5px;
+              opacity:9;
+              overflow:auto;
+              
+              }
+.sidnav a {color:rgb(255, 255, 255);
+           text-decoration:none;
+           }
+.sidnav li {display:block;
+            padding:10px;
+            background:rgb(0, 34, 25);
+            margin:6px;
+            }
+.color1 {background-color:rgb(114, 84, 84);}
+.color2 {background-color:rgb(216, 209, 209);
+        color:black;}
+span{color:white;
+    padding:5px; }
+#one {display:none;}
+#two {display:none;}
+#three {display:none;}
+#four {display:none;}
+#five {display:none;}
+#six {display:none;}
+#seven {display:none;}
+#eight {display:none;}
+#nine {display:none;}
+#ten {display:none;}
+#eleven {display:none;}
+#twelve {display:none;}
+#thirteen {display:none;}
+#fourteen {display:none;}
+#fifteen {display:none;}
+#sixteen {display:none;}
+#seventeen {display:none;}
+#eighteen {display:none;}
+#nineteen {display:none;}
+#tweenty{display:none;}
+#t21{display:none;}
+#t22{display:none;}
+#t23{display:none;}
+#t24{display:none;}
+.footer {width:100%;
+        position:fixed;
+        left:0;
+        bottom:0px;
+        background-color:rgb(1, 39, 46);
+        color:white;}
+.information{width:100%;
+         height:400px;
+         float:left;
+         display:block;
+         background-color:rgb(224, 230, 227);}
+.headed {background-color:rgb(1, 39, 46);
+         text-align:center;
+         width:70%;
+         height:auto;
+          color:rgb(253, 253, 253);
+          margin:0px auto;
+          margin-top:100px;
+          border-radius:20px;
+          padding:5px;
+          text-align:center;
+          font-family:Arial;
+          box-shadow:5px 5px 30px rgb(0, 0, 0);
+          }
+    </style>
+</head>
+<body>
+<div  class="header" >
+    <h1><span style="color:rgb(255, 0, 0);">Government </span><span style="color:rgb(255, 0, 0);">Unity</span><span style="color:rgb(255, 0, 0);">College Nguru</span></h1>
+    <h3 style="color:rgb(255, 255, 255);">Staff Name & Course</h3>
+</div>
+
+
+</div>
+<div class="open">
+   <span onclick="opener()">&#9776;Open</span>
+    </div>
+
+    <div class="slid">
+        <marquee direction="alternate" >EXECUTIVE: *Mohammed Ibn Musa [Principal] *Mada Maji[Vice Principal] *Yahaya Agunu [Vice Academic]</marquee>
+         </div>
+       
+         <div class="sidnav" id="sidnav">
+           <li style="background-color:red;" onclick="mfunction()" id="closee" ><a style=" background:none; padding:12px; color:white;" href="#">close[x]</a></li>
+           <li style="background-color:rgb(5, 0, 77);" onclick="reset()" id="closee" ><a style=" background:none; padding:12px; color:white;" href="#">RESET</a></li>
+           <li onclick="myfunction1()" ><span>&#9775;</span><a href="#">MATHEMATICS</a></li>
+           <li onclick="myfunction2()" ><span>&#9775;</span><a href="#">ENGLISH</a></li>
+           <li onclick="myfunction3()" ><span>&#9775;</span><a href="#">CHEMISTRY</a></li>
+           <li onclick="myfunction4()" ><span>&#9775;</span><a href="#">PHYSICS</a></li>
+           <li onclick="myfunction5()" ><span>&#9775;</span><a href="#">BIOLOGY</a></li>
+           <li onclick="myfunction6()" ><span>&#9775;</span><a href="#">GEOGRPHY</a></li>
+           <li onclick="myfun7()" ><span>&#9775;</span><a href="#">AGRICULTURE</a></li>
+           <li onclick="myfun8()" ><span>&#9775;</span><a href="#">FINACIAL ACOUNTING</a></li>
+           <li onclick="myfun9()" ><span>&#9775;</span><a href="#">COMPUTER </a></li>
+           <li onclick="myfun10()" ><span>&#9775;</span><a href="#">I.R.C/C.R.S</a></li>
+           <li onclick="myfun11()" ><span>&#9775;</span><a href="#">HAUSA</a></li>
+           <li onclick="myfun12()" ><span>&#9775;</span><a href="#">BUSINESS/ST</a></li>
+           <li onclick="myfun13()" ><span>&#9775;</span><a href="#">P.H.E</a></li>
+           <li onclick="myfun14()" ><span>&#9775;</span><a href="#">MUSIC</a></li>
+           <li onclick="myfun15()" ><span>&#9775;</span><a href="#">BASIC SCIENCE </a></li>
+           <li onclick="myfun16()" ><span>&#9775;</span><a href="#">BASIC TECHNOLOGY</a></li>
+           <li onclick="myfun17()" ><span>&#9775;</span><a href="#">FINE ART</a></li>
+           <li onclick="myfun18()" ><span>&#9775;</span><a href="#">CIVIC EDUCATION</a></li>
+           <li onclick="myfun19()" ><span>&#9775;</span><a href="#">COMMERCE</a></li>
+           <li onclick="myfun20()" ><span>&#9775;</span><a href="#">FRENCH</a></li>
+           <li onclick="myfun21()" ><span>&#9775;</span><a href="#">GOVERNMENT</a></li>
+           <li onclick="myfun22()" ><span>&#9775;</span><a href="#">ECONOMIC</a></li>
+           <li onclick="myfun23()" ><span>&#9775;</span><a href="#">SOCIAL STUDY</a></li>
+           <li onclick="myfun24()" ><span>&#9775;</span><a href="#">ANIMAL HUSBANDRY</a></li>
+           <li style="background-color:red;" onclick="showALL()" id="closee" ><a style=" background:none; padding:12px; color:white;" href="#">SHOW ALL</a></li>
+
+        
+
+          
+
+           
+
+        </div>
+
+<div class="container">
+   
+    <!-- FIRST CONTAINER 1 -->
+    <div class="content" id="one">
+         <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;MATHEMATICS TEACHERS</h5>
+        <table border="1"style="width:80%;"style="background:white;">
+            <tr>
+                <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+            </tr>
+            <tr>
+                <td class="color1">1</td>
+                <td class="color1">Yakubu Mohammed Abbabe</td>
+                <td class="color1">08060289629</td>
+            </tr>
+            <tr>
+                <td class="color2">2</td>
+                <td class="color2">Taiye Ezekeil </td>
+                <td class="color2">08039594032</td>
+            </tr>
+
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">... </td>
+                <td class="color1">....</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">... </td>
+                <td class="color2">....</td>
+               </tr>
+               <tr>
+                <td class="color1">....</td>
+                <td class="color1">... </td>
+                <td class="color1">....</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">... </td>
+                <td class="color2">....</td>
+               </tr>
+               <tr>
+                <td class="color1">....</td>
+                <td class="color1">... </td>
+                <td class="color1">....</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">... </td>
+                <td class="color2">....</td>
+               </tr>
+               <tr>
+                <td class="color1">....</td>
+                <td class="color1">... </td>
+                <td class="color1">....</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">... </td>
+                <td class="color2">....</td>
+               </tr>
+            
+        </table>
+       
+    </div>
+     <!-- END OF FIRST CONTAINER 1 -->
+
+
+     <!--  2 CONTAINER  -->
+     <div class="content" id="two">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;ENGLISH TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Mohammed Ibn Musa</td>
+               <td class="color1">08035311210</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Muniru Isah Audu</td>
+               <td class="color2">07082288892</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Aisha Ibrahim Akka</td>
+               <td class="color1">0810171572</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Ibrahim Ibn Abdullahi  </td>
+               <td class="color2">08062154066</td>
+           </tr>
+           <tr>
+               <td class="color1">5</td>
+               <td class="color1">Mohammed Bukkar </td>
+               <td class="color1">07036785560</td>
+           </tr>
+           <tr>
+               <td class="color2">6</td>
+               <td class="color2">Aliyu Munkail  </td>
+               <td class="color2">07030610884</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">...</td>
+               <td class="color1">...</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">....</td>
+               <td class="color2">....</td>
+           </tr>
+           <tr>
+            <td class="color1">...</td>
+            <td class="color1">...</td>
+            <td class="color1">...</td>
+        </tr>
+        <tr>
+            <td class="color2">....</td>
+            <td class="color2">....</td>
+            <td class="color2">....</td>
+        </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 2 -->
+
+    
+     <!--  3 CONTAINER  -->
+     <div class="content" id="three">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;CHEMISTRY TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Isah Abubakar</td>
+               <td class="color1">07087761942</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Shuibu Saleh </td>
+               <td class="color2">08133537221</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Hassan Mohammed Jambo</td>
+               <td class="color1">09066688809</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+            <td class="color2">...</td>
+            <td class="color2">..... </td>
+            <td class="color2">.....</td>
+        </tr>
+        <tr>
+            <td class="color1">.....</td>
+            <td class="color1">.....</td>
+            <td class="color1">.....</td>
+        </tr>
+        <tr>
+            <td class="color2">...</td>
+            <td class="color2">..... </td>
+            <td class="color2">.....</td>
+        </tr>
+        <tr>
+            <td class="color1">.....</td>
+            <td class="color1">.....</td>
+            <td class="color1">.....</td>
+        </tr>
+        <tr>
+            <td class="color2">...</td>
+            <td class="color2">..... </td>
+            <td class="color2">.....</td>
+        </tr>
+        <tr>
+            <td class="color1">.....</td>
+            <td class="color1">.....</td>
+            <td class="color1">.....</td>
+        </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 3 -->
+
+    
+     <!--  4 CONTAINER  -->
+     <div class="content" id="four">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;PHYSICS TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Muhammad Mindu Jibrin</td>
+               <td class="color1">07033835496</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Abubakar Jawi </td>
+               <td class="color2">08038847992</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Sani Bulama</td>
+               <td class="color1">08038168445</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Salmamza Yusuf</td>
+               <td class="color2">08083347875</td>
+           </tr>
+           <tr>
+            <td class="color1">....</td>
+            <td class="color1">... </td>
+            <td class="color1">....</td>
+           </tr>
+           <tr>
+            <td class="color2">....</td>
+            <td class="color2">... </td>
+            <td class="color2">....</td>
+           </tr>
+           <tr>
+            <td class="color1">....</td>
+            <td class="color1">... </td>
+            <td class="color1">....</td>
+           </tr>
+           <tr>
+            <td class="color2">....</td>
+            <td class="color2">... </td>
+            <td class="color2">....</td>
+           </tr>
+           <tr>
+            <td class="color1">....</td>
+            <td class="color1">... </td>
+            <td class="color1">....</td>
+           </tr>
+           <tr>
+            <td class="color2">....</td>
+            <td class="color2">... </td>
+            <td class="color2">....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 4 -->
+
+    
+     <!--  5 CONTAINER  -->
+     <div class="content" id="five">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;BIOLOGY TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Salisu Hamidu</td>
+               <td class="color1">08060289567</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Umar Ahmed Abdul'Aziz </td>
+               <td class="color2">07035904900</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Aishatu ALi Kukawa</td>
+               <td class="color1">08069614614</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.......</td>
+           </tr>
+           <tr>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">.....</td>
+               <td class="color2">......</td>
+               <td class="color2">......</td>
+           </tr>
+           <tr>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+               <td class="color1">......</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">....</td>
+               <td class="color2">......</td>
+           </tr>
+           <tr>
+               <td class="color1">......</td>
+               <td class="color1">.......</td>
+               <td class="color1">.......</td>
+           </tr>
+           <tr>
+               <td class="color2">......</td>
+               <td class="color2">......</td>
+               <td class="color2">........</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 5 -->
+
+    
+     <!--  6 CONTAINER  -->
+     <div class="content" id="six">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;GEOGRPAHY TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Yahaya Agunu</td>
+               <td class="color1">08065695189</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Adamu Muhammad Arjali</td>
+               <td class="color2">08065027606</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Adamu Abubakar</td>
+               <td class="color1">07036674721</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Abdulmumini Yusuf</td>
+               <td class="color2">08066652707</td>
+           </tr>
+           <tr>
+               <td class="color1">5</td>
+               <td class="color1">Yusuf Musa Agana</td>
+               <td class="color1">09070595074</td>
+           </tr>
+           <tr>
+            <td class="color2">6</td>
+            <td class="color2">Ismail Yusuf Bundi</td>
+            <td class="color2">07036717945</td>
+           </tr>
+           <tr>
+            <td class="color1">....</td>
+            <td class="color1">... </td>
+            <td class="color1">....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">.... </td>
+               <td class="color2">....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">....</td>
+           </tr>
+           <tr>
+               <td class="color2">.....</td>
+               <td class="color2">.... </td>
+               <td class="color2">....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 6 -->
+
+    
+     <!--  7 CONTAINER  -->
+     <div class="content" id="seven">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;AGRICULTURAL TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Bala Alhaji</td>
+               <td class="color1">08037335246</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Ayuba David Bagome </td>
+               <td class="color2">08086598434</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Aliko Danchuwa</td>
+               <td class="color1">07036788008</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Abdullahi M. Felix</td>
+               <td class="color2">08069823578</td>
+           </tr>
+           <tr>
+               <td class="color1">5</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 7 -->
+
+
+    
+     <!--  8 CONTAINER  -->
+     <div class="content" id="eight">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;FINACIAL ACCOUNTING</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Mohammed Ibrahim Potiskum</td>
+               <td class="color1">08062958595</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">...... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+            <td class="color2">....</td>
+            <td class="color2">...... </td>
+            <td class="color2">.....</td>
+        </tr>
+
+        <tr>
+            <td class="color1">....</td>
+            <td class="color1">....</td>
+            <td class="color1">.....</td>
+        </tr>
+        <tr>
+            <td class="color2">....</td>
+            <td class="color2">...... </td>
+            <td class="color2">.....</td>
+        </tr>
+
+        <tr>
+            <td class="color1">....</td>
+            <td class="color1">....</td>
+            <td class="color1">.....</td>
+        </tr>
+        <tr>
+            <td class="color2">....</td>
+            <td class="color2">...... </td>
+            <td class="color2">.....</td>
+        </tr>
+
+        <tr>
+            <td class="color1">....</td>
+            <td class="color1">....</td>
+            <td class="color1">.....</td>
+        </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">.....</td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 8 -->
+
+    
+     <!--  9 CONTAINER  -->
+     <div class="content" id="nine">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;COMPUTER TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 9-->
+
+    
+     <!--  10 CONTAINER  -->
+     <div class="content" id="ten">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;I.R.S/C.R.S TECHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Ali Abubakar</td>
+               <td class="color1">07066917742</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Yusuf Ubaliyo</td>
+               <td class="color2">08101729244</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Babagana Audu</td>
+               <td class="color1">07038187718</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Murtala Sani</td>
+               <td class="color2">08130211023</td>
+           </tr>
+           <tr>
+               <td class="color1">5</td>
+               <td class="color1">Mohammed Aminu Usman</td>
+               <td class="color1">07037834249</td>
+           </tr>
+           <tr>
+               <td class="color2">6</td>
+               <td class="color2">Mohammead Sani Abdullahi</td>
+               <td class="color2">08065140148</td>
+           </tr>
+           <tr>
+               <td class="color1">7</td>
+               <td class="color1">Hassan Wakil</td>
+               <td class="color1">......</td>
+           </tr>
+           <tr>
+               <td class="color2">.....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">......</td>
+               <td class="color1">.......</td>
+               <td class="color1">......</td>
+           </tr>
+           <tr>
+               <td class="color2">.....</td>
+               <td class="color2">.......</td>
+               <td class="color2">.......</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 10 -->
+    
+     <!--  11 CONTAINER  -->
+     <div class="content" id="eleven">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;HAUSA TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Mada Maji</td>
+               <td class="color1">07038364190</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2"> Garba Jallaba </td>
+               <td class="color2">08060656661</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Aishatu Mohammed Muktar</td>
+               <td class="color1">08032815345</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Idriss Sabo </td>
+               <td class="color2">08065402975</td>
+           </tr>
+           <tr>
+               <td class="color1">5</td>
+               <td class="color1">Mohammead Alhaji Adamu</td>
+               <td class="color1">08061524050</td>
+           </tr>
+           <tr>
+               <td class="color2">6</td>
+               <td class="color2">Yusuf Yawale</td>
+               <td class="color2">09064320351</td>
+           </tr>
+           <tr>
+            <td class="color1">....</td>
+            <td class="color1">... </td>
+            <td class="color1">....</td>
+           </tr>
+           <tr>
+            <td class="color2">....</td>
+            <td class="color2">... </td>
+            <td class="color2">....</td>
+           </tr>
+           <tr>
+            <td class="color1">....</td>
+            <td class="color1">... </td>
+            <td class="color1">....</td>
+           </tr>
+           <tr>
+            <td class="color2">....</td>
+            <td class="color2">... </td>
+            <td class="color2">....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 11 -->
+    
+     <!--  12 CONTAINER  -->
+     <div class="content" id="twelve">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;BUSINESS STUDY TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 12 -->
+    
+     <!--  13 CONTAINER  -->
+     <div class="content" id="thirteen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;P.H.E TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Aminu Mohammed Musa</td>
+               <td class="color1">08036295012</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Baba Garba Dagari </td>
+               <td class="color2">08068078854</td>
+           </tr>
+
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">.....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">.....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 13 -->
+    
+     <!--  14 CONTAINER  -->
+     <div class="content" id="fourteen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;MUSIC TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 14 -->
+    
+     <!--  15 CONTAINER  -->
+     <div class="content" id="fifteen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;BASIC SCIENCE </h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Abdulrahman Rabiu</td>
+               <td class="color1">07031317405</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Binta Adamu </td>
+               <td class="color2">07086887138</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Abas Gombo Bizi</td>
+               <td class="color1">08030442624</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 15 -->
+    
+     <!--  16 CONTAINER  -->
+     <div class="content" id="sixteen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;BASIC TECHNOLOGY</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Musbahu Mustapha</td>
+               <td class="color1">08032206263</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 16 -->
+    
+     <!--  17 CONTAINER  -->
+     <div class="content" id="seventeen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;FINE ART TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Hamidu Mamman</td>
+               <td class="color1">08065579547</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 17 -->
+    
+     <!--  18 CONTAINER  -->
+     <div class="content" id="eighteen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;CIVIC EDUCATION TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Istifanus Usman</td>
+               <td class="color1">07030155098</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Hashimu Saiyadi Umar</td>
+               <td class="color2">07037834249</td>
+           </tr>
+
+           <tr>
+               <td class="color1">3</td>
+               <td class="color1">Aminu Mohammed</td>
+               <td class="color1">07036054886</td>
+           </tr>
+           <tr>
+               <td class="color2">4</td>
+               <td class="color2">Abdullahi Mohammed Damawa </td>
+               <td class="color2">08065932749</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">..</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 18 -->
+    
+     <!--  19 CONTAINER  -->
+     <div class="content" id="nineteen">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;COMMERCE TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Saidu Shehu</td>
+               <td class="color1">08030725420</td>
+           </tr>
+           <tr>
+               <td class="color2">2</td>
+               <td class="color2">Paulyn Agu</td>
+               <td class="color2">08106353194</td>
+           </tr>
+
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 19 -->
+    
+     <!--  20 CONTAINER  -->
+     <div class="content" id="tweenty">
+        <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;FRENCH TEACHERS</h5>
+       <table border="1"style="width:80%;"style="background:white;">
+           <tr>
+               <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+           </tr>
+           <tr>
+               <td class="color1">1</td>
+               <td class="color1">Awordinde Bose</td>
+               <td class="color1">08032965036</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">...</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">...</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           <tr>
+               <td class="color1">....</td>
+               <td class="color1">.....</td>
+               <td class="color1">.....</td>
+           </tr>
+           <tr>
+               <td class="color2">....</td>
+               <td class="color2">..... </td>
+               <td class="color2">.....</td>
+           </tr>
+           
+       </table>
+     
+      
+   </div>
+    <!-- END OF FIRST CONTAINER 20 -->
+
+         <!--  21 CONTAINER  -->
+         <div class="content" id="t21">
+            <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;GOVERNMENT TEACHERS</h5>
+           <table border="1"style="width:80%;"style="background:white;">
+               <tr>
+                   <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+               </tr>
+               <tr>
+                   <td class="color1">1</td>
+                   <td class="color1">Muken Samsun Musa</td>
+                   <td class="color1">0803527109</td>
+               </tr>
+               <tr>
+                   <td class="color2">2</td>
+                   <td class="color2">Mohammed Ibrahim Mustapha</td>
+                   <td class="color2">08066458816</td>
+               </tr>
+    
+               <tr>
+                   <td class="color1">3</td>
+                   <td class="color1">Mohammed Ibrahim Nguru</td>
+                   <td class="color1">08069036655</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+               <tr>
+                   <td class="color2">...</td>
+                   <td class="color2">.....</td>
+                   <td class="color2">.....</td>
+               </tr>
+               
+           </table>
+          
+       </div>
+        <!-- END OF FIRST CONTAINER 21-->
+
+
+         <!--  22 CONTAINER  -->
+         <div class="content" id="t22">
+            <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;ECONOMIC TEACHERS</h5>
+           <table border="1"style="width:80%;"style="background:white;">
+               <tr>
+                   <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+               </tr>
+               <tr>
+                   <td class="color1">1</td>
+                   <td class="color1">Flourence Odum</td>
+                   <td class="color1">080347607769</td>
+               </tr>
+               <tr>
+                   <td class="color2">2</td>
+                   <td class="color2">Fatima Idriss Gambo</td>
+                   <td class="color2">07036406748</td>
+               </tr>
+    
+               <tr>
+                   <td class="color1">3</td>
+                   <td class="color1">Auwal Mohammed Kaku</td>
+                   <td class="color1">07036145916</td>
+               </tr>
+               <tr>
+                <td class="color2">4</td>
+                <td class="color2">Samaila Audu</td>
+                <td class="color2">07035758508</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+               <tr>
+                   <td class="color2">...</td>
+                   <td class="color2">.....</td>
+                   <td class="color2">.....</td>
+               </tr>
+               
+           </table>
+          
+       </div>
+        <!-- END OF FIRST CONTAINER 22-->
+
+         <!--  23 CONTAINER  -->
+         <div class="content" id="t23">
+            <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;SOCIAL STUDY TEACHERS</h5>
+           <table border="1"style="width:80%;"style="background:white;">
+               <tr>
+                   <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+               </tr>
+               <tr>
+                   <td class="color1">1</td>
+                   <td class="color1">Mohammed Ibrahim Fika</td>
+                   <td class="color1">08035914160</td>
+               </tr>
+               <tr>
+                   <td class="color2">2</td>
+                   <td class="color2">Mala Ari Waziri</td>
+                   <td class="color2">08102838604</td>
+               </tr>
+    
+               <tr>
+                   <td class="color1">....</td>
+                   <td class="color1">....</td>
+                   <td class="color1">.....</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+               <tr>
+                   <td class="color2">...</td>
+                   <td class="color2">.....</td>
+                   <td class="color2">.....</td>
+               </tr>
+               
+           </table>
+          
+       </div>
+        <!-- END OF FIRST CONTAINER 23-->
+
+         <!--  24 CONTAINER  -->
+         <div class="content" id="t24">
+            <h5 style="margin:0px; padding:0px; text-align:center; font-size:12pt; color:rgb(255, 0, 13);">&#9775;ANIMAL HUSBANDRY TEACHERS</h5>
+           <table border="1"style="width:80%;"style="background:white;">
+               <tr>
+                   <th>S/N</th><th>NAME</th><th>PHONE NO</th>
+               </tr>
+               <tr>
+                   <td class="color1">1</td>
+                   <td class="color1">Alhaji Baba Idriss</td>
+                   <td class="color1">08061604075</td>
+               </tr>
+               <tr>
+                   <td class="color2">2</td>
+                   <td class="color2">Audu Maina Dumai</td>
+                   <td class="color2">08033359445</td>
+               </tr>
+    
+               <tr>
+                   <td class="color1">....</td>
+                   <td class="color1">....</td>
+                   <td class="color1">.....</td>
+               </tr>
+               <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+            <tr>
+                <td class="color2">....</td>
+                <td class="color2">...... </td>
+                <td class="color2">.....</td>
+            </tr>
+    
+            <tr>
+                <td class="color1">....</td>
+                <td class="color1">....</td>
+                <td class="color1">.....</td>
+            </tr>
+               <tr>
+                   <td class="color2">...</td>
+                   <td class="color2">.....</td>
+                   <td class="color2">.....</td>
+               </tr>
+               
+           </table>
+          
+       </div>
+        <!-- END OF FIRST CONTAINER 24-->
+    <div class="information" id="displayer">
+        <h2 class="headed" id="headed">Teachers love students who come to class every day with a good attitude and genuinely want to learn.</h2>
+    </div>
+</div>
+<div class="footer">
+    <div class="principal">
+        <span >&#9772;Mohammed I Musa</span>
+        <span >&#9742;08035311210 </span>
+         </div>
+     
+         <div class="listic" >
+             <marquee direction="alternate" >Government Unity College Staff Name and Courses Design by <span style="color:rgb(69, 248, 239)">Corper HAMZA YAKUBU 2020/2021 (0806627104).</span></marquee>
+              </div>
+</div>
+
+<script>
+    function opener() {
+     document.getElementById("sidnav").style.display="block";
+    }
+  function mfunction(){
+    document.getElementById("sidnav").style.display="none";
+  }
+
+  //main functions of the programm
+function myfunction1(){
+   
+    document.getElementById("sidnav").style.display="none";
+    
+    document.getElementById("one").style.display="block";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfunction2(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="block";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfunction3(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="block";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfunction4(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="block";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfunction5(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="block";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfunction6(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="block";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun7(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="block";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun8(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="block";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun9(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="block";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun10(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="block";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun11(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="block";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun12(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="block";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun13(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="block";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun14(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="block";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun15(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="block";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun16(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="block";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun17(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="block";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun18(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="block";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun19(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="block";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function myfun20(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="block";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfun21(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="block";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfun22(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="block";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfun23(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="block";
+    document.getElementById("t24").style.display="none";
+    document.getElementById("displayer").style.display="none";
+    
+}
+
+function myfun24(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="block";
+    document.getElementById("displayer").style.display="none";
+    
+}
+function showALL(){
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="block";
+    document.getElementById("two").style.display="block";
+    document.getElementById("three").style.display="block";
+    document.getElementById("four").style.display="block";
+    document.getElementById("five").style.display="block";
+    document.getElementById("six").style.display="block";
+    document.getElementById("seven").style.display="block";
+    document.getElementById("eight").style.display="block";
+    document.getElementById("nine").style.display="block";
+    document.getElementById("ten").style.display="block";
+    document.getElementById("eleven").style.display="block";
+    document.getElementById("twelve").style.display="block";
+    document.getElementById("thirteen").style.display="block";
+    document.getElementById("fourteen").style.display="block";
+    document.getElementById("fifteen").style.display="block";
+    document.getElementById("sixteen").style.display="block";
+    document.getElementById("seventeen").style.display="block";
+    document.getElementById("eighteen").style.display="block";
+    document.getElementById("nineteen").style.display="block";
+    document.getElementById("tweenty").style.display="block";
+    document.getElementById("t21").style.display="block";
+    document.getElementById("t22").style.display="block";
+    document.getElementById("t23").style.display="block";
+    document.getElementById("t24").style.display="block";
+}
+
+function reset(){
+    document.getElementById("displayer").style.display="block";
+    document.getElementById("sidnav").style.display="none";
+    document.getElementById("one").style.display="none";
+    document.getElementById("two").style.display="none";
+    document.getElementById("three").style.display="none";
+    document.getElementById("four").style.display="none";
+    document.getElementById("five").style.display="none";
+    document.getElementById("six").style.display="none";
+    document.getElementById("seven").style.display="none";
+    document.getElementById("eight").style.display="none";
+    document.getElementById("nine").style.display="none";
+    document.getElementById("ten").style.display="none";
+    document.getElementById("eleven").style.display="none";
+    document.getElementById("twelve").style.display="none";
+    document.getElementById("thirteen").style.display="none";
+    document.getElementById("fourteen").style.display="none";
+    document.getElementById("fifteen").style.display="none";
+    document.getElementById("sixteen").style.display="none";
+    document.getElementById("seventeen").style.display="none";
+    document.getElementById("eighteen").style.display="none";
+    document.getElementById("nineteen").style.display="none";
+    document.getElementById("tweenty").style.display="none";
+    document.getElementById("t21").style.display="none";
+    document.getElementById("t22").style.display="none";
+    document.getElementById("t23").style.display="none";
+    document.getElementById("t24").style.display="none";
+
+}
+
+
+
+var msg1 =setInterval(mytimer1, 3000);
+function mytimer1(){
+var abs ="NEXT";
+document.getElementById("headed").innerHTML=abs;
+}
+var msg3 =setInterval(mytimer3, 5000);
+function mytimer3(){
+var second1="Teachers are passionate people who enjoy making a difference.";
+document.getElementById("headed").innerHTML=second1;
+}
+
+
+var msg2 =setInterval(mytimer2, 10000);
+function mytimer2(){
+var o1 ="Teachers love students who come to class every day with a good attitude and genuinely want to learn.";
+document.getElementById("headed").innerHTML=o1;
+}
+
+var msg8 =setInterval(mytimer8, 15000);
+function mytimer8(){
+var s6 ="Teachers are real people .They have lives outside of school. they have terrible days and good days. they make mistakes.";
+document.getElementById("headed").innerHTML=s6;
+}
+
+
+
+</script>
+</body>
+</html>
